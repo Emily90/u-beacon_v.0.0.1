@@ -1,0 +1,62 @@
+/*页面主体*/
+.wrapper{background: url("img/bg_body_141205.jpg") repeat; position: relative; min-width: 1180px;}
+/*通栏导航*/
+.page_head{background: url("img/bg_nav_02_141205.png") repeat-x; width: 100%; /* height: 127px;*/ position: relative; /* position: fixed;*/ top: 0;}
+/*包装*/
+.bg_top_owner{position: relative;}
+/*导航*/
+.nav{margin: 0 auto; position: relative; height: 127px;}
+.nav .translation{position: absolute; right: 0; top: 16px; color: #808080;}
+.nav .translation a{font-size: 12px; color: #808080;}
+.nav .logo{margin-top: 34px; margin-right: 90px; float: left;}
+.nav .nav_list{margin-top: 60px; float: left;}
+.nav .nav_list li{float: left; margin-right: 40px; position: relative;}
+.nav .nav_list li a{font: 16px "微软雅黑"; color: #3e3d3e;}
+.nav .nav_list li:hover a{color: #00a1e9; text-decoration: none;}
+.nav .nav_list li span{background: url("img/nav_cur_141205.png") no-repeat; display: block; position: absolute; top: 48px; left: -28px; width: 25px; height: 14px; z-index: 9; text-indent: -9999px; display: none;}
+.nav .nav_list li .drop_down{position: absolute; top: 60px; left: -66px; display: none; float: left; z-index: 9;}
+.nav .nav_list li .drop_down li{width: 221px; height: 46px; line-height: 46px; margin: 0; padding-left: 18px ; background-color: #dde3ea; float: left;}
+.nav .nav_list li .drop_down li a{color: #404145;}
+.nav .nav_list li .drop_down li:hover{background-color: #00aeff;}
+.nav .nav_list li .drop_down li:hover a{color: #ffffff;}
+/*页脚*/
+.page_bottom{width: 100%; background: #282a2e;}
+.page_bottom .footer{padding: 80px 0 128px 0;}
+.page_bottom .footer .cooperator img{float: left;}
+.page_bottom .footer .cooperator dl{float: left;}
+.page_bottom .footer .cooperator dl dd{float: left; margin-right: 39px;}
+.page_bottom .footer .cooperator dl dd.last{margin-right: 0;}
+.page_bottom .footer .cooperator .line02{padding-left: 82px;}
+.page_bottom .footer .copyright{text-align: center;}
+.page_bottom .footer .copyright p{font-size: 14px; color: #999999; line-height: 24px;}
+.page_bottom .footer .copyright p a{color: #999999; padding: 0 10px;}
+/*人才战略*/
+.u-beacon_ind01_zxj141206{padding: 33px 25px 0 5px;}
+.u-beacon_ind01_zxj141206 h2{color: #747980; font-size: 18px; font-weight: normal; line-height: 30px;}
+.u-beacon_ind01_zxj141206 p{font-size: 14px; color: #747980; line-height: 30px;}
+/*新闻二级页*/
+.u-beacon_ind02_zxj141208 h2{font-size: 18px; color: #00a1e9; text-align: center; height: 80px; line-height: 80px;}
+.u-beacon_ind02_zxj141208 h3{font-size: 16px; color: #4c4c4c; font-weight: normal; height: 33px; line-height: 33px;}
+.u-beacon_ind02_zxj141208 p{font-size: 14px; color: #999; line-height: 30px; text-indent: 2em;}
+.u-beacon_ind02_zxj141208 .image{margin: 5px 0;}
+/*招聘职位*/
+.u-beacon_zpzw_bigImg{position: relative;}
+.u-beacon_zpzw_bigImg img{margin-top: -127px;}
+.u-beacon_zpzw_bigImg .bg_zpzw_141208{background-color: #e1e1df; height: 120px; width: 100%; position: absolute; bottom: 0; opacity: 0.8;}
+.u-beacon_zpzw_bigImg .bg_zpzw_141208 .u-beacon_ind03_zxj141208 ul{float: left;}
+.u-beacon_zpzw_bigImg .bg_zpzw_141208 .u-beacon_ind03_zxj141208 ul li{float: left; width: 196px; background: url("img/job_12.png") no-repeat center 20%; text-align: center;}
+.u-beacon_zpzw_bigImg .bg_zpzw_141208 .u-beacon_ind03_zxj141208 ul li a{font-size: 14px; color: #808080; display: block; padding-top: 80px; padding-bottom: 20px;}
+.u-beacon_zpzw_bigImg .bg_zpzw_141208 .u-beacon_ind03_zxj141208 ul li:hover,
+.u-beacon_zpzw_bigImg .bg_zpzw_141208 .u-beacon_ind03_zxj141208 ul li.more:hover{background-color: #ebebeb; border-bottom: 1px solid #00a1e9; cursor: pointer;}
+.u-beacon_zpzw_bigImg .bg_zpzw_141208 .u-beacon_ind03_zxj141208 ul li.more{background: url("img/job_14.png") no-repeat center 20%;}
+.u-beacon_ind04_zxj141208 h2{color: #00a1e9; font-size: 20px; height: 48px; line-height: 48px; font-weight: normal;}
+.u-beacon_ind04_zxj141208 h3{font-weight: normal; color: #747980; font-size: 16px; line-height: 30px; height: 30px;}
+.u-beacon_ind04_zxj141208 h3 a{color: #747980; font-size: 16px;}
+.u-beacon_ind04_zxj141208 p{font-size: 14px; color: #747980; line-height: 30px; height: 30px;}
+.u-beacon_ind04_zxj141208 .dot_line{background: url("img/dot_line_141209.png") repeat-x; height: 13px;}
+.u-beacon_ind05_zxj141208{margin: 75px 0 110px 0; background: #ececec; padding: 29px 0 40px 20px; font-size: 14px; color: #747980;}
+/*团队风采*/
+.u-beacon_ind06_zxj141209{padding-top: 20px; /*padding: 20px 0 80px 0;*/}
+.u-beacon_ind06_zxj141209 .images{position: relative; background: url("img/bg_photos.jpg") no-repeat;}
+.u-beacon_ind06_zxj141209 .images .bg_text{position: absolute; bottom: 0; background: url("img/bg_photo_title_141205.png") no-repeat; height: 36px; width: 100%; line-height: 36px;}
+.u-beacon_ind06_zxj141209 .images .bg_text a{cursor: default; padding-left: 19px; font-size: 14px; color: #fff;}

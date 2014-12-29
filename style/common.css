@@ -1,0 +1,17 @@
+.w1180 { width: 1180px; margin: 0 auto; }
+.w777 { width: 777px; float: left; }
+.w590 { width: 590px; float: left; }
+.w516 { width: 516px; float: left; }
+.w380 { width: 380px; float: left; }
+.w382 { width: 382px; float: right; }
+.w300 { width: 300px; float: left; }
+.w830 { width: 830px; float: left; }
+.w350 { width: 350px; float: left; }
+.mr10 { margin-right: 10px; }
+.mr20 { margin-right: 20px; }
+.mr120 { margin-right: 120px; }
+.text_indent p { text-indent: 2em; }
+.bg_grey { background-color: #eff1f3; }
+.bg_light_grey { background-color: #f0f5f7; }
+.bg_dark_grey { background-color: #eef1f5; }
+.bg_white { background-color: #ffffff; }
