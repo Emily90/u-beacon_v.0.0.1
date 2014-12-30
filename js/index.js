@@ -258,7 +258,7 @@ function getAnimate(wrapper,navId,divObj,conId,wid,flag,length){
                 //易逛
                if(currentPage == 1){
                     $(".bg_yg_02 .content .tips_01").css({"top":"0px","left":"0px"});
-                    $(".bg_yg_02 .content .tips_02").css({"top":"200px","left":"230px"});
+                    $(".bg_yg_02 .content .tips_02").css({"top":"200px","left":"260px"});
                     $(".bg_yg_02 .content .tips_05").css({"top":"0px","left":"928px"});
                     $(".bg_yg_02 .content .tips_01").animate({top:"+="+300,left:"+="+600},100);
                     $(".bg_yg_02 .content .tips_02").animate({top:"+="+100,left:"+="+100},100)
