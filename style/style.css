@@ -961,6 +961,8 @@
 }
 .u-beacon_address li .u-beacon_ind17_zxj141211 a.email_icon {
   background-position: 0 -153px;
+  text-decoration: underline;
+  color: #e2534b;
 }
 .u-beacon_address li.last {
   margin-right: 0;
@@ -1359,18 +1361,11 @@
   background: url('../images/dxcg_image_04.jpg') no-repeat 50% 0;
 }
 .bg_dxcg_04 .core_window .content {
-  /* padding-right: 40px;
-      */
-  /* position */
   top: 290px;
   right: 0;
   left: 0;
   padding-top: 40px;
   padding-bottom: 60px;
-  /* bottom: 285px;
-      */
-  /* right: 10%;
-      */
   padding-left: 120px;
   background: url('img/bg_yiyuanjiejue_zxj_141215.png') no-repeat 0 0;
 }
