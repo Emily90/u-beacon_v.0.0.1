@@ -143,6 +143,10 @@
   padding: 0 10px;
   color: #999;
 }
+.page_bottom .footer .copyright p a img {
+  position: absolute;
+  bottom: -100px;
+}
 /* 人才战略 */
 .u-beacon_ind01_zxj141206 {
   padding: 33px 25px 0 5px;
