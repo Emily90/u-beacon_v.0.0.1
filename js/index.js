@@ -88,10 +88,12 @@ $(document).ready(function () {
     var numTo;
     var ad;
 
+    
     //为元素添加宽度
     $(slideUl).css({"width":windowsWidth*slideNum+"px"});//ul长度
     $(slideImg).css({"width":windowsWidth+"px"});//li长度
-
+    //延迟加载
+    $(slideImg).css({"display":"block"});
     //窗口大小变化时，重新获取宽度
     $(window).resize(function(){
         windowsWidth = $(window).width();
@@ -124,7 +126,7 @@ $(document).ready(function () {
         //添加高亮
         $(slideDot).eq(indexCur).addClass("cur");
         lock = false;
-       ad = window.setInterval(autoScroll,intervalTime);
+        ad = window.setInterval(autoScroll,intervalTime);
     });
 
     //每隔三秒自动切换
