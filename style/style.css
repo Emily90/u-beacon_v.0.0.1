@@ -57,6 +57,10 @@
   text-decoration: none;
   color: #00a1e9;
 }
+.nav .nav_list li.cur a {
+  text-decoration: none;
+  color: #00a1e9;
+}
 .nav .nav_list li span {
   position: absolute;
   z-index: 9;
