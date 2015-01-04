@@ -145,7 +145,7 @@
 }
 .page_bottom .footer .copyright p a img {
   position: absolute;
-  bottom: -100px;
+  display: none;
 }
 /* 人才战略 */
 .u-beacon_ind01_zxj141206 {
@@ -1096,11 +1096,13 @@
   margin-right: 0;
 }
 .u-beacon_con21_zxj141211 .line01 {
-  padding-right: 50px;
-  padding-left: 60px;
+  padding-left: 19px;
 }
 .u-beacon_con21_zxj141211 .line02 {
-  padding-left: 69px;
+  padding-left: 52px;
+}
+.u-beacon_con21_zxj141211 .line03 {
+  padding-left: 320px;
 }
 /*公司简介*/
 .u-beacon_ind30_zxj141225 {

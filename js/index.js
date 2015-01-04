@@ -18,6 +18,44 @@ $(document).ready(function () {
         var imgSrc = $(this).attr("src").split("_cur.png")[0]+'.png';
         $(this).attr("src",imgSrc);
     });
+
+    function mousePos(e){
+        var x,y;
+        var e = e||window.event;
+        return {
+        x:e.clientX+document.body.scrollLeft+document.documentElement.scrollLeft,
+        y:e.clientY+document.body.scrollTop+document.documentElement.scrollTop
+        };
+        };
+        function test(e){
+        document.getElementById("mjs").innerHTML = mousePos(e).x+','+mousePos(e).y;    
+    };
+
+    $("#AppDownload").mouseover(function(event) {
+        /* Act on the event */
+        var pageX = mousePos(event).x;
+        var pageY = mousePos(event).y;
+        $(this).find('img').css({"display":"block"});
+        $(this).find('img').css({"left":pageX,"top":pageY});
+    });
+
+    $("#AppDownload").mouseout(function(event) {
+        /* Act on the event */
+        $(this).find('img').css({"display":"none"});
+    });
+
+    $("#weibo").mouseover(function(event) {
+        /* Act on the event */
+        var pageX = mousePos(event).x;
+        var pageY = mousePos(event).y;
+        $(this).find('img').css({"display":"block"});
+        $(this).find('img').css({"left":pageX,"top":pageY});
+    });
+
+    $("#weibo").mouseout(function(event) {
+        /* Act on the event */
+        $(this).find('img').css({"display":"none"});
+    });
     //右侧导航
     var dotCur = 'style/img/bg_dot_rightnav02_zxj_141216_cur.png';
     var dotSrc = 'style/img/bg_dot_rightnav02_zxj_141216.png';
@@ -159,7 +197,7 @@ $(document).ready(function () {
         $(".intro").show();
     });
 
-     // 分页
+     
      
 
 });
