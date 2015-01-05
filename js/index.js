@@ -104,6 +104,8 @@ $(document).ready(function () {
 
     ad = window.setInterval(autoScroll,intervalTime);
 
+
+
     $(slideDot).click(function(){
         //清除计时
         clearInterval(ad);
