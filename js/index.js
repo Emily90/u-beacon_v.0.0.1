@@ -206,22 +206,69 @@ $(document).ready(function () {
 
 });
 
+
+// $(document).ready(function() 
+// { 
+// console.log("浏览器当前窗口可视区域高度:"+$(window).height()); //浏览器当前窗口可视区域高度 
+// console.log("浏览器当前窗口文档的高度:"+$(document).height()); //浏览器当前窗口文档的高度 
+// console.log("浏览器当前窗口文档body的高度:"+$(document.body).height());//浏览器当前窗口文档body的高度 
+// console.log("浏览器当前窗口文档body的总高度 包括border padding margin:"+$(document.body).outerHeight(true));//浏览器当前窗口文档body的总高度 包括border padding margin 
+// console.log("浏览器当前窗口可视区域宽度:"+($(window).width())); //浏览器当前窗口可视区域宽度
+// console.log("浏览器当前窗口文档对象宽度:"+$(document).width());//浏览器当前窗口文档对象宽度
+// console.log("浏览器当前窗口文档body的高度:"+$(document.body).width());//浏览器当前窗口文档body的高度 
+// console.log("浏览器当前窗口文档body的总宽度 包括border padding margin:"+$(document.body).outerWidth(true));//浏览器当前窗口文档body的总宽度 包括border padding margin 
+// console.log("显示器分辨率，只能用JavaScript代码获取高度:"+screen.height);//显示器分辨率，只能用JavaScript代码获取 
+// console.log("显示器分辨率，只能用JavaScript代码获取宽度:"+screen.width); 
+// }) ; 
+
+
+
 var dotCur = 'style/img/bg_dot_rightnav02_zxj_141216_cur.png';
 var dotSrc = 'style/img/bg_dot_rightnav02_zxj_141216.png';
 
 //字体左右滑入
 function getAnimate(wrapper,navId,divObj,conId,wid,flag,length){
-    var windowsW = $(window).width();//当前窗口大小
-    var len = length?length:divObj.length;//一共多少个
-    var totalH = parseInt(wrapper.parent(".page_body").height())+"px";//总高度
-    wrapper.css({"height":totalH,"width":windowsW+"px"});
-    divObj.css("width",windowsW+"px");
+    var windowsW = parseInt($(window).width());//当前窗口大小
+    var windowsH = parseInt($(window).height());
+
+    divObj.css('height',windowsH);
+    divObj.find(".bg_img img").attr('width',windowsW);
+    divObj.find(".bg_img img").attr('height',windowsH);
+
+    wrapper.parent(".page_body").css({'width':windowsW+'px','height':windowsH+'px','overflow':'hidden'});
+    wrapper.css({'width':windowsW+'px','height':windowsH*4+'px'});
+    
+
+
+    // var len = length?length:divObj.length;//一共多少个
+    // var totalH = parseInt(wrapper.parent(".page_body").height())+"px";//总高度
+    // wrapper.css({"height":totalH,"width":windowsW+"px"});
+
+    // divObj.css("width",windowsW+"px");
+
+    // console.log('window.screen.height'+window.screen.height);
+    // console.log('window.screen.width'+window.screen.width);
+    // console.log('window.screen.availHeight'+window.screen.availHeight);
+    // console.log('window.screen.availWidth'+window.screen.availWidth);
+    // console.log('window.screenTop'+window.screenTop);
+    // console.log('window.screenLeft'+window.screenLeft);
 
     //重置窗口大小
     $(window).resize(function() {
-        windowsW = $(window).width();//当前窗口大小
-        totalH = parseInt(wrapper.parent(".page_body").height())+"px";//总长度
-        divObj.css("width",windowsW+"px");
+        // windowsW = $(window).width();//当前窗口大小
+        // totalH = parseInt(wrapper.parent(".page_body").height())+"px";//总长度
+        // divObj.css("width",windowsW+"px");
+        // 
+        windowsW = parseInt($(window).width());//当前窗口大小
+        windowsH = parseInt($(window).height());
+
+
+        divObj.css('height',windowsH);
+        divObj.find(".bg_img img").attr('width',windowsW);
+        divObj.find(".bg_img img").attr('height',windowsH);
+
+        wrapper.parent(".page_body").css({'width':windowsW+'px','height':windowsH+'px','overflow':'hidden'});
+        wrapper.css({'width':windowsW+'px','height':windowsH*4+'px'});
     });
     //点击切换页面
     navId.find("li").click(function(){
@@ -235,14 +282,26 @@ function getAnimate(wrapper,navId,divObj,conId,wid,flag,length){
 
 
         //给高度赋值
-        var liH = parseInt(divObj.eq(currentPage).height());
+        //var liH = parseInt(divObj.eq(currentPage).height());
 
-        wrapper.parent(".page_body").css({"height":liH+'px',"overflow":"hidden"});//page_body
+        //wrapper.parent(".page_body").css({"height":liH+'px',"overflow":"hidden"});//page_body
         
+        var iphoneH = divObj.eq(currentPage).find(".images img").attr('height');
+                    
+        divObj.eq(currentPage).find(".images").css({'top':(windowsH + 96 - iphoneH)/2 + 'px','display':'block'});
+
+       // divObj.eq(currentPage).find(".images").css({'top':'0','display':'block'});
+      //  divObj.eq(currentPage).find(".images").animate({top:"+="+(windowsH + 96 - iphoneH)/2 + 'px'});
+       
+       var titleH = divObj.eq(currentPage).find(conId).height();
+        divObj.eq(currentPage).find(conId).css({'top':(windowsH + 96 - titleH)/2 + 'px','display':'block'});
+        
+        var liH = windowsH;
+
         if(liH > 960) {
             liH = 960;
         }
-        divObj.find(".core_window").css({"height":liH+'px'}); //core_window
+       // divObj.find(".core_window").css({"height":liH+'px'}); //core_window
         wrapper.animate({
             "margin-top":-(liH*currentPage)+"px"
         },function(){
@@ -281,6 +340,9 @@ function getAnimate(wrapper,navId,divObj,conId,wid,flag,length){
             }else if(flag == 3){
                 //商超o2o
                 if(currentPage == 0){
+                    
+                    
+
                     divObj.eq(currentPage).find(conId).css({left:0,opacity:1});
                     divObj.eq(currentPage).find(conId).animate({left:"+="+96,opacity:1},500);
                 }else if(currentPage == 1){

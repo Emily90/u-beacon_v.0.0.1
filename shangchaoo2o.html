@@ -91,6 +91,10 @@
                     </ul>
                 </div>
                 <div class="u-beacon_ind27_zxj141211 bg_sc_01">
+                    <div class="bg_img">
+                        <img class="bg_img" src="images/bg_shangchao_image_02.jpg" height="100%" width="100%">
+                    </div>
+                    <div class="next"></div>
                     <div class="core_window">
                         <div class="content">
                             <div class="title">
@@ -100,27 +104,36 @@
                                     商场的优惠信息将客流引导到线下购物，
                                     及时了解店铺的优惠活动</p>
                             </div>
-                            <div class="tips_01 tips">
-                                <img src="images/sp_images_03_cur.png" alt=""/>
-                                <span>购物</span>
-                            </div>
-                            <div class="tips_02 tips">
-                                <img src="images/sp_images_05_cur.png" alt=""/>
-                                <span>折扣</span>
-                            </div>
-                            <div class="tips_03 tips">
-                                <img src="images/sp_images_09_cur.png" alt=""/>
-                                <span>娱乐</span>
-                            </div>
-                            <div class="tips_04 tips">
-                                <img src="images/sp_images_07_cur.png" alt=""/>
-                                <span>美食</span>
+                            <div class="images">
+                                <img src="images/iphone_shangchaoo2o2.png" height="578" width="400">
+                                <div class="tips_01 tips">
+                                    <img src="images/sp_images_03_cur.png" alt=""/>
+                                    <span>购物</span>
+                                </div>
+                                <div class="tips_02 tips">
+                                    <img src="images/sp_images_05_cur.png" alt=""/>
+                                    <span>折扣</span>
+                                </div>
+                                <div class="tips_03 tips">
+                                    <img src="images/sp_images_09_cur.png" alt=""/>
+                                    <span>娱乐</span>
+                                </div>
+                                <div class="tips_04 tips">
+                                    <img src="images/sp_images_07_cur.png" alt=""/>
+                                    <span>美食</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="next"></div>
+                       
                     </div>
+                     
                 </div>
                 <div class="u-beacon_ind27_zxj141211 bg_sc_02">
+                    <div class="bg_img">
+                        <img src="images/bg_shangchao_image_03.jpg" height="100%" width="100%">
+                       <!--  <div class="next"></div> -->
+                    </div>
+                    <div class="next"></div>
                     <div class="core_window">
                         <div class="content">
                             <div class="title">
@@ -129,14 +142,22 @@
                                     让用户随时知道自己的位置
                                     利用导航轻松抵达目的地</p>
                             </div>
-                            <div class="image">
-                                <img src="images/yg_animate_141225.gif" height="240" width="240" alt=""/>
+                            <div class="images">
+                                <img src="images/iphone02_shangchao_zxj_150106.png" height="631" width="305">
+                                <div class="tips_01">
+                                    <img src="images/yg_animate_141225.gif"/>
+                                </div>
                             </div>
                         </div>
                         <div class="next"></div>
                     </div>
                 </div>
                 <div class="u-beacon_ind27_zxj141211 bg_sc_03">
+                    <div class="bg_img">
+                        <img src="images/bg_shangchao_image_04.jpg" height="100%" width="100%">
+                       <!--  <div class="next"></div> -->
+                    </div>
+                    <div class="next"></div>
                     <div class="core_window">
                         <div class="content">
                             <div class="title">
@@ -144,14 +165,19 @@
                                 <p>360度实景展示，
                                     随时随地身在商场，随心所欲逛商场</p>
                             </div>
-                            <!--<div class="image">-->
-                            <!--<img src="images/iphone_03_zxj_141216.png" alt=""/>-->
-                            <!--</div>-->
+                           <!--  <div class="image">
+                            <img src="images/iphone_03_zxj_141216.png" alt=""/>
+                            </div> -->
                         </div>
                         <div class="next"></div>
                     </div>
                 </div>
                 <div class="u-beacon_ind27_zxj141211 bg_sc_04">
+                    <div class="bg_img">
+                        <img src="images/bg_shangchao_image_05.jpg" height="100%" width="100%">
+                       <!--  <div class="next"></div> -->
+                    </div>
+                    <div class="next"></div>
                     <div class="core_window">
                         <div class="content">
                             <div class="title">
@@ -164,6 +190,11 @@
                     </div>
                 </div>
                 <div class="u-beacon_ind27_zxj141211 bg_sc_05">
+                    <div class="bg_img">
+                        <img src="images/bg_shangchao_image_06.jpg" height="100%" width="100%">
+                       <!--  <div class="next"></div> -->
+                    </div>
+                    
                     <div class="core_window">
                         <div class="content">
                             <div class="title">
@@ -190,6 +221,27 @@
     var conId = ".content .title";
     var wid = 170;
     var flag = 3 ;
+
+    // var windowsW = $(window).width();//当前窗口大小
+    // var windowsH = $(window).height();
+
+    // var s_img = new Image(); 
+    // s_img.src = divObj.find(".bg_img img").attr("src"); 
+    // var imgWidth = s_img.width; //图片实际宽度 
+    // var imgHeight = s_img.height;
+
+    // console.log(imgWidth + '图片宽度' + imgHeight);
+
+    // //图片等比例缩放
+    // if(windowsW/windowsH > imgWidth/imgHeight){
+    //     divObj.find(".bg_img img").attr('width',windowsW);
+    // }else{
+    //     divObj.find(".bg_img img").attr('height',imgHeight);
+    // }
+
+
+
+
 
     getAnimate(wrapper, navId, divObj, conId, wid, flag);
 
